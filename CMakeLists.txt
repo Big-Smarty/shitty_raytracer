@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.20)
+project(rt_circle)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
+#set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -fno-omit-frame-pointer -fsanitize=address")
+#set(CMAKE_LINKER_FLAGS_DEBUG "${CMAKE_LINKER_FLAGS_DEBUG} -fno-omit-frame-pointer -fsanitize=address")
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_STANDARD 20)
+
+add_compile_options(-g)
+find_package(glm REQUIRED)
+add_executable(rt_circle main.cpp rt_circle.cpp)
+target_link_libraries(rt_circle glm)
