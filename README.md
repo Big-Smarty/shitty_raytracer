@@ -1,3 +1,14 @@
 # shitty_raytracer
-shitty raytracer. Generate with "cmake -GNinja -Bbuild ." and build with "cmake --build build". run with "./build/rt_circle".
-this will generate a file called rt_circle.png. open it somehow and glance at the beauty of complete and utter technical shit.
+
+A quick and dirty raytracer. Casts rays at two spheres, shades them with a
+single diffuse sun light, and writes the result to a 1920x1080 PNG. Nothing
+fancy, but it renders.
+
+## Build
+
+Generate with `cmake -GNinja -Bbuild .` and build with `cmake --build build`.
+
+## Run
+
+Run `./build/rt_circle`. This generates a file called `rt_circle.png`. Open it
+however you like and admire your two very round spheres.
